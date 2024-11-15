@@ -96,3 +96,5 @@ Below are the key features of **FitSpace**:
 - **MySQL**: The database used to store user data, reservations, and facility information.
   - **MySQL Workbench**: The tool used to manage the database and run SQL queries.
 <br>
+
+## <a id="proj_developer"> 🏋️‍♂️ Project Developer </a> 
