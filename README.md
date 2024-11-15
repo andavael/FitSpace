@@ -14,10 +14,30 @@ The FitSpace: FDC Reservation Portal is a console-based Java application designe
 The FitSpace: FDC Reservation Portal is a console-based Java application designed for students and employees of Batstate-U Alangilan Campus, providing an efficient way to reserve gym facilities at the Fitness Development Center (FDC). Users can browse available facilities, select a reservation date, and choose from six standard time slots. Similarly, the system enables admins to manage users, reservations, and facility details with ease. This streamlined process aims to enhance the accessibility and organization of the campus's, specifically, FDC's recreational spaces.
 <br>
 
-## <a id="proj_oop"> 🏋️‍♂️ Application of OOP </a>
+## 🏋️‍♂️ Application of OOP
 ### OOP Principles Applied
-1. **Encapsulation**: Implemented by storing user data (e.g., first name, last name, password) as private fields in classes like Student and Employee. Public getter and setter methods are used to access and modify these fields, ensuring controlled access to the data. Similarly, facility details like availability and type are encapsulated as private fields with public methods to interact with the data, promoting data protection and integrity.
-2. **Inheritance**: Implemented by creating a base User class that contains common attributes and methods for both Student and Employee classes. The Student and Employee classes extend User, inheriting shared behavior like registerUser() and loginUser(), while adding specific functionality like user role validation.
-3. **Polymorphism**:  Implemented as both Student and Employee classes override the registerUser() and loginUser() methods of the User class. Although these methods have the same name in the base class, their behavior differs based on whether the user is a student or an employee, allowing dynamic method invocation based on the object type.
-4. **Abstraction**: Implemented by using the abstract User class, which defines the common structure and behavior (like registerUser() and loginUser()) but leaves the actual implementation of these methods to the Student and Employee subclasses. This hides the internal details of user registration and login, providing a simplified interface for interaction.
-<br>
+
+1. **Encapsulation**:  
+   User data (e.g., first name, last name, password) are stored as private fields in classes like `Student` and `Employee`. Public getter and setter methods are provided to safely access and modify these fields, ensuring controlled access to sensitive data. Similarly, facility details like availability and type are encapsulated as private fields, with public methods enabling interaction, promoting data integrity and protection.
+
+2. **Inheritance**:  
+   A base `User` class is created to define common attributes and methods shared by both `Student` and `Employee` classes. By extending the `User` class, both `Student` and `Employee` inherit common behaviors like `registerUser()` and `loginUser()`, while allowing each subclass to implement user-specific functionalities, such as role validation.
+
+3. **Polymorphism**:  
+   The `Student` and `Employee` classes override the `registerUser()` and `loginUser()` methods from the `User` class. While these methods share the same name in the base class, their behavior differs depending on the object type (student or employee). This enables dynamic method invocation, ensuring the correct implementation is executed based on the object type.
+
+4. **Abstraction**:  
+   The `User` class is abstract, defining the common structure and behaviors like `registerUser()` and `loginUser()`. However, the actual implementation of these methods is left to the `Student` and `Employee` subclasses. This abstraction hides the internal details, offering a simplified interface for interacting with user registration and login processes.
+
+
+
+## 🏋️‍♂️ Application of SDG
+
+The **Fitness Development Center (FDC) Reservation Portal** contributes to the United Nations' Sustainable Development Goals (SDGs) by promoting physical well-being and economic growth through the following SDGs:
+
+### 1. **SDG 4: Quality Education**  
+   The **FDC Booking Hub** contributes to improving access to quality education by providing a platform for students and employees to book gym facilities for both physical activities and academic purposes. FDC is used not only for physical training but also for conducting classes and exams, offering students a versatile learning environment. By integrating educational facilities with a booking system, FDC supports an enhanced learning experience for students, promoting health and wellness alongside academic success.
+
+### 2. **SDG 3: Good Health and Well-being**  
+   The platform supports the health and well-being of students and employees by making it easier to reserve gym facilities for fitness and recreational purposes. Access to well-maintained fitness facilities encourages regular exercise, which improves physical health, reduces stress, and promotes mental well-being. By ensuring convenient access to these resources, the system contributes to the overall health of the university community.
+
