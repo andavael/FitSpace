@@ -15,8 +15,9 @@ The FitSpace: FDC Reservation Portal is a console-based Java application designe
 <br>
 
 ## <a id = "proj_oop"> 🏋️‍♂️ Application of OOP </a> 
-### OOP Principles Applied
+**FitSpace** implements core Object-Oriented Programming (OOP) principles to ensure efficient user management and system functionality through the following OOP principles:
 
+### OOP Principles Applied
 1. **Encapsulation**:  
    User data (e.g., first name, last name, password) are stored as private fields in classes like `Student` and `Employee`. Public getter and setter methods are provided to safely access and modify these fields, ensuring controlled access to sensitive data. Similarly, facility details like availability and type are encapsulated as private fields, with public methods enabling interaction, promoting data integrity and protection.
 
@@ -28,12 +29,12 @@ The FitSpace: FDC Reservation Portal is a console-based Java application designe
 
 4. **Abstraction**:  
    The `User` class is abstract, defining the common structure and behaviors like `registerUser()` and `loginUser()`. However, the actual implementation of these methods is left to the `Student` and `Employee` subclasses. This abstraction hides the internal details, offering a simplified interface for interacting with user registration and login processes.
-
+<br>
 
 
 ## <a id = "proj_sdg"> 🏋️‍♂️ Alignment with SGD </a> 
 
-The **Fitness Development Center (FDC) Reservation Portal** contributes to the United Nations' Sustainable Development Goals (SDGs) by promoting physical well-being and quality education through the following SDGs:
+**FitSpace** contributes to the United Nations' Sustainable Development Goals (SDGs) by promoting physical well-being and quality education through the following SDGs:
 
 ### SDGs Fullfilled
 1. **SDG 4: Quality Education**  
@@ -41,4 +42,4 @@ The **Fitness Development Center (FDC) Reservation Portal** contributes to the U
 
 2. **SDG 3: Good Health and Well-being**  
    The platform supports the health and well-being of students and employees by making it easier to reserve gym facilities for fitness and recreational purposes. Access to well-maintained fitness facilities encourages regular exercise, which improves physical health, reduces stress, and promotes mental well-being. By ensuring convenient access to these resources, the system contributes to the overall health of the university community.
-
+<br>
