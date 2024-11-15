@@ -33,7 +33,7 @@ The FitSpace: FDC Reservation Portal is a console-based Java application designe
 
 ## <a id = "proj_sdg"> 🏋️‍♂️ Alignment with SGD </a> 
 
-The **Fitness Development Center (FDC) Reservation Portal** contributes to the United Nations' Sustainable Development Goals (SDGs) by promoting physical well-being and economic growth through the following SDGs:
+The **Fitness Development Center (FDC) Reservation Portal** contributes to the United Nations' Sustainable Development Goals (SDGs) by promoting physical well-being and quality education through the following SDGs:
 
 ### SDGs Fullfilled
 1. **SDG 4: Quality Education**  
