@@ -7,7 +7,7 @@ The FitSpace: FDC Reservation Portal is a console-based Java application designe
 -  [3.  Alignment withSDG](#proj_sdg)
 -  [4. Usage Guidelines](#proj_guidelines)
 -  [5. Technical Solution Framework](#proj_techframework)
--  [5. Project Developer](#proj_developer)
+-  [6. Project Developer](#proj_developer)
 <br>
 
 ## <a id = "proj_overview"> 🏋️‍♂️ Project Overview </a> 
@@ -86,4 +86,13 @@ Below are the key features of **FitSpace**:
    Admins can add or modify facility status (availability, type, etc.).
 4. **Log-out**  
    Admins can log out from the system.
+<br>
+
+## 5. Technical Solution Framework
+**FitSpace** is built using the following technologies:
+
+- **Java**: The main programming language used for developing the application. It provides a solid foundation for building an object-oriented system.
+- **Visual Studio Code**: The IDE used for writing and debugging the code.
+- **MySQL**: The database used to store user data, reservations, and facility information.
+  - **MySQL Workbench**: The tool used to manage the database and run SQL queries.
 <br>
