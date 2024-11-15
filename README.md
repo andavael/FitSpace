@@ -88,7 +88,7 @@ Below are the key features of **FitSpace**:
    Admins can log out from the system.
 <br>
 
-## 5. Technical Solution Framework
+## <a id="proj_techframework"> 🏋️‍♂️ Technical Solution Framework </a> 
 **FitSpace** is built using the following technologies:
 
 - **Java**: The main programming language used for developing the application. It provides a solid foundation for building an object-oriented system.
