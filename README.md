@@ -43,3 +43,47 @@ The FitSpace: FDC Reservation Portal is a console-based Java application designe
 2. **SDG 3: Good Health and Well-being**  
    The platform supports the health and well-being of students and employees by making it easier to reserve gym facilities for fitness and recreational purposes. Access to well-maintained fitness facilities encourages regular exercise, which improves physical health, reduces stress, and promotes mental well-being. By ensuring convenient access to these resources, the system contributes to the overall health of the university community.
 <br>
+
+
+## <a id="proj_guidelines"> 🏋️‍♂️ Usage Guidelines </a>
+
+Below are the key features of **FitSpace**:
+
+### Main Menu
+1. **User Registration**  
+   Allows users to register as either a Student or Employee by providing necessary details like name, role, and password.
+2. **User Login**  
+   Users can log in as either a Student or Employee while using their credentials stored in the database.
+3. **Admin Dashboard Portal**  
+   Provides access to an admin interface to manage users, reservations, and facilities.
+4. **Exit**  
+   Exits the application.
+
+### Student Menu
+1. **Make a Reservation**  
+   Students can book a reservation for gym facilities.
+2. **View My Reservation**  
+   Students can view their reservation details and cancel them if necessary.
+3. **Log-out**  
+   Students can log out from the system.
+
+### Employee Menu
+1. **Make a Reservation**  
+   Employees can book a reservation for gym facilities.
+2. **View My Reservation**  
+   Employees can view their own reservation and cancel it if necessary.
+3. **View All Reservations**  
+   Employees can view all reservations made by other users.
+4. **Log-out**  
+   Employees can log out from the system.
+
+### Admin Menu
+1. **Manage Users**  
+   Admins can view all users and search for a specific user.
+2. **Manage Reservations**  
+   Admins can view all reservations and modify the reservation status.
+3. **Manage Facilities**  
+   Admins can add or modify facility status (availability, type, etc.).
+4. **Log-out**  
+   Admins can log out from the system.
+<br>
