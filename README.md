@@ -11,7 +11,6 @@ The FitSpace: FDC Booking Hub is a console-based Java application designed for s
 -  [3.  Alignment with SDG](#proj_sdg)
 -  [4. Usage Guidelines](#proj_guidelines)
 -  [5. Technical Solution Framework](#proj_techframework)
--  [6. Project Developer](#proj_developer)
 <br>
 
 ## <a id = "proj_overview"> 🏋️‍♂️ Project Overview </a> 
@@ -100,5 +99,3 @@ Below are the key features of **FitSpace**:
 - **MySQL**: The database used to store user data, reservations, and facility information.
   - **MySQL Workbench**: The tool used to manage the database and run SQL queries.
 <br>
-
-## <a id="proj_developer"> 🏋️‍♂️ Project Developer </a> 
