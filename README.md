@@ -1,4 +1,6 @@
-![FitSpace Logo](logo.png)
+<p align="center">
+  <img src="logo.png" alt="FitSpace Logo" width="200">
+</p>
 
 
 # FitSpace: FDC Booking Hub 🏀🏐
