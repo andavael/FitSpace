@@ -8,7 +8,7 @@ The FitSpace: FDC Booking Hub is a console-based Java application designed for s
 ## Summary of Sections
 -  [1. Project Overview](#proj_overview)
 -  [2.  Application of OOP](#proj_oop)
--  [3.  Alignment withSDG](#proj_sdg)
+-  [3.  Alignment with SDG](#proj_sdg)
 -  [4. Usage Guidelines](#proj_guidelines)
 -  [5. Technical Solution Framework](#proj_techframework)
 -  [6. Project Developer](#proj_developer)
