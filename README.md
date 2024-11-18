@@ -22,17 +22,16 @@ The FitSpace: FDC Booking Hub is a console-based Java application designed for s
 
 ### OOP Principles Applied
 1. **Encapsulation**:  
-   User data (e.g., first name, last name, password) are stored as private fields in classes like `Student` and `Employee`. Public getter and setter methods are provided to safely access and modify these fields, ensuring controlled access to sensitive data. Similarly, facility details like availability and type are encapsulated as private fields, with public methods enabling interaction, promoting data integrity and protection.
+  Encapsulation is used by making fields like firstName, password, and uniqueId in the User class, and facilityID, name, and status in the Facility class private. Public methods like registerUser, loginUser, and getters control access to these fields, ensuring data integrity and security by restricting direct modification of the object's internal state.
 
-2. **Inheritance**:  
-   A base `User` class is created to define common attributes and methods shared by both `Student` and `Employee` classes. By extending the `User` class, both `Student` and `Employee` inherit common behaviors like `registerUser()` and `loginUser()`, while allowing each subclass to implement user-specific functionalities, such as role validation.
+2. **Inheritance**:    
+   Inheritance is applied in the Student and Employee classes by extending the User base class. These derived classes inherit properties like userId, uniqueId, and password, as well as methods such as registerUser(), loginUser(), and displayCommonHeader(). This allows the student and employee classes to reuse the common functionality from the User class, while also enabling them to have their specific behavior when needed.
 
 3. **Polymorphism**:  
-   The `Student` and `Employee` classes override the `registerUser()` and `loginUser()` methods from the `User` class. While these methods share the same name in the base class, their behavior differs depending on the object type (student or employee). This enables dynamic method invocation, ensuring the correct implementation is executed based on the object type.
+  Polymorphism is shown as the Student and Employee classes override methods like registerUser() and loginUser() to provide specific behaviors. The getUserType method returns the appropriate object based on the users input, and Java dynamically selects the correct method based on the object type.
 
 4. **Abstraction**:  
-   The `User` class is abstract, defining the common structure and behaviors like `registerUser()` and `loginUser()`. However, the actual implementation of these methods is left to the `Student` and `Employee` subclasses. This abstraction hides the internal details, offering a simplified interface for interacting with user registration and login processes.
-<br>
+   Abstraction in this implementation is achieved by creating an abstract User class that contains common methods like commonRegistration() and commonLogin() to handle shared functionality (such as database interactions and password validation). The abstract methods displayUserMenu(), registerUser(), and loginUser() are left unimplemented, forcing subclasses (Student and Employee) to provide specific implementations for these behaviors. This ensures that each user type can define its own actions while still adhering to a shared structure. 
 
 
 ## <a id = "proj_sdg"> 🏋️‍♂️ Alignment with SGD </a> 
