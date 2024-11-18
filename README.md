@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="ReadMe/FitSpace.png" alt="FitSpace Logo" width="350">
+   <img src="ReadMe/logo.png" alt="FitSpace Logo" width="350">
 </p>
 
 # FitSpace: FDC Booking Hub 🏀🏐
