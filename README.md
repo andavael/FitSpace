@@ -20,7 +20,6 @@ The FitSpace: FDC Booking Hub is a console-based Java application designed for s
 ## <a id = "proj_oop"> 🏋️‍♂️ Application of OOP </a> 
 **FitSpace** implements core Object-Oriented Programming (OOP) principles to ensure efficient user management and system functionality through the following OOP principles:
 
-### OOP Principles Applied
 1. **Encapsulation**:  
   Encapsulation is used by making fields like firstName, password, and uniqueId in the User class, and facilityID, name, and status in the Facility class private. Public methods like registerUser, loginUser, and getters control access to these fields, ensuring data integrity and security by restricting direct modification of the object's internal state.
 
