@@ -3,7 +3,7 @@
 </p>
 
 # FitSpace: FDC Booking Hub 🏀🏐
-  The **FitSpace: FDC Booking Hub** is a console-based Java application designed for students and employees of Batstate-U Alangilan Campus, providing an efficient way to reserve gym facilities at the Fitness Development Center (FDC). Users can browse available facilities, select a reservation date, and choose from six standard time slots. Additionally, the system serves as an effective way to store and maintain records of facility usage, making it easier to track the condition of each facility and contact users in case of any damage. Similarly, admins can manage users, reservations, and facility details with ease. This streamlined process enhances both the accessibility and organization of the campus's FDC recreational spaces.
+  **FitSpace: FDC Booking Hub** is a console-based Java application for students and employees of Batstate-U Alangilan Campus, allowing them to efficiently reserve gym facilities at the Fitness Development Center (FDC). Users can view available facilities, select a date, and book a time slot. The system also tracks facility usage, making it easier to monitor their condition and contact users in case of damage. Admins can manage users, reservations, and facilities, improving the organization and accessibility of the FDC’s recreational spaces.
 <br>
 
 ## 🏋️‍♂️ Summary of Sections
