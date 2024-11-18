@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="FitSpace Logo" width="350">
+   <img src="ReadMe/FitSpace.png" alt="FitSpace Logo" width="350">
 </p>
 
 # FitSpace: FDC Booking Hub 🏀🏐
@@ -85,12 +85,24 @@
 <br>
 
 ## <a id="proj_developer"> 🏋️‍♂️ Project Developer </a>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>GitHub</th>
+      <th>E-mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="ReadMe/Anda.jpg" alt="Anthonina Dhapniella C. Vael" width="50" height="50" style="border-radius:50%;"></td>
+      <td><a href="https://github.com/andavael" target="_blank">Anthonina Dhapniella C. Vael</a></td>
+      <td><a href="https://github.com/andavael" target="_blank">andavael</a></td>
+      <td><a href="mailto:23-04485@g.batstate-u.edu.ph">23-04485@g.batstate-u.edu.ph</a></td>
+    </tr>
+  </tbody>
+</table>
 
-![Anthonina](https://your-image-link.com)
-
-### **Developer Name**: Anthonina Dhapniella C. Vael
-
-- 📂 **GitHub**: [@andavael](https://github.com/andavael)  
-- 📧 **Email**: [23-04485@g.batstate-u.edu.ph](mailto:23-04485@g.batstate-u.edu.ph)
 
 
