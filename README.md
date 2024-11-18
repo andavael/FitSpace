@@ -20,19 +20,19 @@
 **FitSpace** implements core **Object-Oriented Programming (OOP) principles** to ensure efficient user management and system functionality through the following OOP principles:
 
 ---
-## **Encapsulation**  
+## ☕ **Encapsulation**  
    - **Private Fields**: The `User` class uses private fields such as `firstName`, `password`, and `uniqueId`, while the `Facility` class uses private fields like `facilityID`, `name`, and `status`.  
    - **Public Methods**: Methods like `registerUser()`, `loginUser()`, and getters control access to these fields, ensuring data integrity and security by preventing direct modification of the object's internal state.
 ---
-## **Inheritance**  
+## ☕ **Inheritance**  
    - **Base Class**: The `Student` and `Employee` classes extend the `User` base class, inheriting common properties (`userId`, `uniqueId`, `password`) and methods (`registerUser()`, `loginUser()`, `displayCommonHeader()`).  
    - **Customization**: These subclasses allow customization of behavior while reusing common functionality from the `User` class.
 ---
-## **Polymorphism**  
+## ☕ **Polymorphism**  
    - **Overridden Methods**: The `Student` and `Employee` classes override methods like `registerUser()` and `loginUser()` to implement specific behaviors for each user type.  
    - **Dynamic Method Selection**: The `getUserType()` method returns the correct object based on user input, and Java dynamically selects the appropriate method based on the object type.
 ---
-## **Abstraction**  
+## ☕ **Abstraction**  
    - **Abstract Class**: The `User` class is abstract, containing shared methods like `commonRegistration()` and `commonLogin()`. These methods handle functionality such as database interactions and password validation.  
    - **Abstract Methods**: Methods like `displayUserMenu()`, `registerUser()`, and `loginUser()` are left unimplemented, forcing the subclasses (`Student`, `Employee`) to define their specific implementations. This ensures that each user type can define its own actions while following a common structure.
 <br>
