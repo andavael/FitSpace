@@ -51,25 +51,25 @@
 
 ## <a id="proj_guidelines"> 🏋️‍♂️ Usage Guidelines </a>
 
-**FitSpace** offers the following key features:
+**FitSpace** offers the following **key features:**
 
-### 1. **User Registration**  
-> Register as a **Student** or **Employee** by providing your name, role, and password.
+#### 1. **User Registration**  
+   > &nbsp;&nbsp;&nbsp;&nbsp;Register as a **Student** or **Employee** by providing your name, role, and password.
 
-### 2. **User Login**  
-> Log in using your stored credentials for **Students** or **Employees**.
+#### 2. **User Login**  
+   > &nbsp;&nbsp;&nbsp;&nbsp;Log in using your stored credentials for **Students** or **Employees**.
 
-### 3. **Admin Dashboard**  
-> Access the **Admin Interface** to manage users, reservations, and facilities.
+#### 3. **Admin Dashboard**  
+   > &nbsp;&nbsp;&nbsp;&nbsp;Access the **Admin Interface** to manage users, reservations, and facilities.
 
-### 4. **Reservation Management**  
-> **Students** and **Employees** can make, view, and manage their reservations.
+#### 4. **Reservation Management**  
+   > &nbsp;&nbsp;&nbsp;&nbsp;**Students** and **Employees** can make, view, and manage their reservations.
 
-### 5. **Admin Control**  
-> **Admins** have the ability to manage users, reservations, and facilities, and modify their statuses.
+#### 5. **Admin Control**  
+   > &nbsp;&nbsp;&nbsp;&nbsp;**Admins** have the ability to manage users, reservations, and facilities, and modify their statuses.
 
-### 6. **Log-out**  
-> **Users**, **Employees**, and **Admins** can log out from the system at any time.
+#### 6. **Log-out**  
+   > &nbsp;&nbsp;&nbsp;&nbsp;**Users**, **Employees**, and **Admins** can log out from the system at any time.
 
 <br>
 
