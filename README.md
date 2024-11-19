@@ -75,9 +75,6 @@
 
 
 ## <a id="proj_techframework"> 🏋️‍♂️ Technical Solution Framework </a> 
-
-**FitSpace** is developed using the following technologies:
-
 - **Java**: The main programming language used to build the application.
 - **Visual Studio Code**: The IDE for writing and debugging the code.
 - **MySQL**: The database used to store user data, reservations, and facility information.
