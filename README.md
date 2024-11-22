@@ -21,8 +21,8 @@
 
 ---
 ## ☕ **Encapsulation**  
-   - **Private Fields**: The `User` class uses private fields such as `firstName`, `password`, and `uniqueId`, while the `Facility` class uses private fields like `facilityID`, `name`, and `status`.  
-   - **Public Methods**: Methods like `registerUser()`, `loginUser()`, and getters control access to these fields, ensuring data integrity and security by preventing direct modification of the object's internal state.
+   - **Private Fields**: The User class uses private fields such as firstName, password, and uniqueId, while the Facility class uses private fields like facilityID, name, and status. Similarly, in the Admin class, the fields adminID and adminPass are kept private. This ensures that sensitive information is not directly accessible from outside the class, protecting the integrity of the data.
+   - **Public Methods**:  Methods like registerUser(), loginUser(), and getters control access to these fields, ensuring data integrity and security by preventing direct modification of the object's internal state. In Admin.java, methods like getAdminID(), getAdminPass(), and validateCredentials() allow controlled access to the adminID and adminPass fields. The validateCredentials() method encapsulates the logic of comparing the provided credentials with the stored ones, securing the authentication process.
 ---
 ## ☕ **Inheritance**  
    - **Base Class**: The `Student` and `Employee` classes extend the `User` base class, inheriting common properties (`userId`, `uniqueId`, `password`) and methods (`registerUser()`, `loginUser()`, `displayCommonHeader()`).  
@@ -51,37 +51,119 @@
 
 ## <a id="proj_guidelines"> 🏋️‍♂️ Usage Guidelines </a>
 
-**FitSpace** offers the following **key features:**
+**FitSpace** offers the following **key features** alongside their detailed **usage guidelines:**
 
-#### 1. **User Registration**  
-   > &nbsp;&nbsp;&nbsp;&nbsp;Register as a **Student** or **Employee** by providing your name, role, and password.
+### 🏸 1. **User Registration**  
+   **Guideline:** Register as a **Student** or **Employee** by providing your full name, role, and password.  
+   **Steps:**  
+   1. Choose your role (**Student** or **Employee**).  
+   2. Provide your full name and role-specific ID (SR code for students, employee ID for employees).  
+   3. Set a secure password.  
+   4. Submit your registration form.
 
-#### 2. **User Login**  
-   > &nbsp;&nbsp;&nbsp;&nbsp;Log in using your stored credentials for **Students** or **Employees**.
+### 🏸 2. **User Login**  
+   **Guideline:** Log in using your stored credentials for **Students** or **Employees**.  
+   **Steps:**  
+   1. Enter your **userID** (SR code for students, employee number for employees).  
+   2. Enter your **password**.  
+   3. Upon successful login, you will see list of options corresponding to your role (Student or Employee).
 
-#### 3. **Admin Dashboard**  
-   > &nbsp;&nbsp;&nbsp;&nbsp;Access the **Admin Interface** to manage users, reservations, and facilities.
+### 🏸 3. **Admin Dashboard**  
+   **Guideline:** Access the **Admin Interface** to manage users, reservations, and facilities.  
+   **Steps:**  
+   1. Enter **Admin ID** and **password** (provided by the system).  
+   2. Upon successful login, you will see options to manage:  
+      - **Manage Users**  
+      - **Manage Reservations**  
+      - **Manage Facilities**  
+   3. Choose the appropriate option to perform actions.
 
-#### 4. **Reservation Management**  
-   > &nbsp;&nbsp;&nbsp;&nbsp;**Students** and **Employees** can make, view, and manage their reservations.
+### 🏸 4. **Reservation Management**  
+   **Guideline:** **Students** and **Employees** can make, view, and manage their reservations.  
+   **Steps:**  
+   1. Log in to your account.  
+   2. Navigate to the **Reservation** section.  
+   3. Select a facility and choose an available time slot.  
+   4. Confirm your reservation and view your **reservation history**.  
+   5. You can cancel an active and confirmed reservation from the **reservation history**.
 
-#### 5. **Admin Control**  
-   > &nbsp;&nbsp;&nbsp;&nbsp;**Admins** have the ability to manage users, reservations, and facilities, and modify their statuses.
+### 🏸 5. **Admin Control**  
+   **Guideline:** **Admins** have the ability to manage users, reservations, and facilities, and modify their statuses.  
+   **Steps:**  
+   1. Log in to the **Admin Dashboard**.  
+   2. Choose the appropriate section:  
+      - **Manage Users**: Add, update, or remove users.  
+      - **Manage Reservations**: Approve, reject, or cancel reservations.  
+      - **Manage Facilities**: Add, remove, or modify the status of facilities.
 
-#### 6. **Log-out**  
-   > &nbsp;&nbsp;&nbsp;&nbsp;**Users**, **Employees**, and **Admins** can log out from the system at any time.
+### 🏸 6. **Log-out**  
+   **Guideline:** **Users**, **Employees**, and **Admins** can log out from the system at any time.  
+   **Steps:**  
+   1. Click on **Log-out** from any screen when you are finished.  
+   2. You will be securely logged out of the system.
+
+---
+
+## 🏸 **Additional Guidelines**:
+- **Security**: Always use a strong password and change it regularly to keep your account secure.
+- **Fair Usage**: Ensure that reservations are made fairly, respecting others' access to facilities.
+- **Availability**: Facilities are subject to availability and will be updated in real-time for users to view.
+
+---
+The **FitSpace** project is organized in a structured directory format to ensure efficient management of the application’s components. Below is the directory structure that outlines the organization of files and folders:
+
+```
+FDC Booking Hub/
+├── .vscode/
+│   └── settings.json
+├── database/
+│   └── schema.sql
+├── lib/
+│   └── mysql-connector-j-9.1.0.jar
+├── src/
+│   ├── main.java
+│   ├── utils/
+│   │   ├── admin/
+│   │   │   ├── admin.java
+│   │   │   └── adminManager.java
+│   │   ├── database/
+│   │   │   └── DBConnection.java
+│   │   ├── facilities/
+│   │   │   ├── facility.java
+│   │   │   └── facilityManager.java
+│   │   ├── reservation/
+│   │   │   ├── reservation.java
+│   │   │   ├── reservationManager.java
+│   │   │   └── cancellation.java
+│   │   └── users/
+│   │       ├── user.java
+│   │       ├── userManager.java
+│   │       ├── employee.java
+│   │       └── student.java
+```
+
 
 <br>
 
 
-## <a id="proj_techframework"> 🏋️‍♂️ Technical Solution Framework </a> 
-- **Java**: The main programming language used to build the application.
-- **Visual Studio Code**: The IDE for writing and debugging the code.
-- **MySQL**: The database used to store user data, reservations, and facility information.
-  - **MySQL Workbench**: The tool used to manage and run SQL queries on the database.
+## <a id="proj_techframework"> 🏋️‍♂️ **Technical Solution Framework** </a> 
+
+### **Core Technologies**
+
+- **💻 Java**: The primary programming language used to develop the application, providing the backbone for the system's logic and functionality.
+  
+- **🔧 Visual Studio Code**: The integrated development environment (IDE) chosen for writing, debugging, and testing the application's code.
+
+- **🗄️ MySQL**: The relational database management system (RDBMS) used to store and manage critical data, including user profiles, reservations, and facility details.
+  
+  - **🖥️ MySQL Workbench**: The powerful tool utilized for managing the MySQL database, running queries, and visualizing the database structure.
+
 <br>
 
-## <a id="proj_developer"> 🏋️‍♂️ Project Developer </a>
+## <a id="proj_developer"> 🏋️‍♂️ **Project Developer** </a>
+
+I am a **second-year BS Computer Science student** from **CS-2101** at Batangas State University. I created this project as part of my course **CS-211: Object-Oriented Programming (OOP)**. Below are my contact details:
+
 <table>
   <thead>
     <tr>
@@ -101,5 +183,8 @@
   </tbody>
 </table>
 
+---
 
+Thank you for exploring my **FitSpace** project! Feel free to check out the code on my GitHub or reach out to me for any queries.
 
+<br>
