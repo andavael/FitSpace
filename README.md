@@ -35,6 +35,7 @@
 ## ☕ **Abstraction**  
    - **Abstract Class**: The `User` class is abstract, containing shared methods like `commonRegistration()` and `commonLogin()`. These methods handle functionality such as database interactions and password validation.  
    - **Abstract Methods**: Methods like `displayUserMenu()`, `registerUser()`, and `loginUser()` are left unimplemented, forcing the subclasses (`Student`, `Employee`) to define their specific implementations. This ensures that each user type can define its own actions while following a common structure.
+---
 <br>
 
 ## <a id = "proj_sdg"> 🏋️‍♂️ Alignment with SDGs </a> 
