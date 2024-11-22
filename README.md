@@ -21,8 +21,8 @@
 
 ---
 ## ☕ **Encapsulation**  
-   - **Private Fields**: The User class uses private fields such as firstName, password, and uniqueId, while the Facility class uses private fields like facilityID, name, and status. Similarly, in the Admin class, the fields adminID and adminPass are kept private. This ensures that sensitive information is not directly accessible from outside the class, protecting the integrity of the data.
-   - **Public Methods**:  Methods like registerUser(), loginUser(), and getters control access to these fields, ensuring data integrity and security by preventing direct modification of the object's internal state. In Admin.java, methods like getAdminID(), getAdminPass(), and validateCredentials() allow controlled access to the adminID and adminPass fields. The validateCredentials() method encapsulates the logic of comparing the provided credentials with the stored ones, securing the authentication process.
+   - **Private Fields**: The User class uses private fields such as `firstName`, `password`, and `uniqueId`, while the `Facility` class uses private fields like `facilityID`, `name`, and `status`. Similarly, in the `Admin` class, the fields `adminID` and `adminPass` are kept private. This ensures that sensitive information is not directly accessible from outside the class, protecting the integrity of the data.
+   - **Public Methods**:  Methods like `registerUser()`, `loginUser()`, and getters control access to these fields, ensuring data integrity and security by preventing direct modification of the object's internal state. In `Admin.java`, methods like `getAdminID()` and `getAdminPass()` allow controlled access to the `adminID` and `adminPass` fields.
 ---
 ## ☕ **Inheritance**  
    - **Base Class**: The `Student` and `Employee` classes extend the `User` base class, inheriting common properties (`userId`, `uniqueId`, `password`) and methods (`registerUser()`, `loginUser()`, `displayCommonHeader()`).  
