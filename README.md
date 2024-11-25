@@ -12,6 +12,7 @@
 -  [3. Usage Guidelines](#proj_guidelines)
 -  [4. Technical Solution Framework](#proj_techframework)
 -  [5. Project Developer](#proj_developer)
+-  [6. Acknowledgement](#proj_acknowledge)
 <br>
 
 
