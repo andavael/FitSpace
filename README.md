@@ -1,59 +1,93 @@
 <p align="center">
-   <img src="ReadMe/logo.png" alt="FitSpace Logo" width="350">
+   <img src="ReadMe/FinalHeader.png" alt="Header style="max-width: 100%; height: auto;">
 </p>
 
 # FitSpace: FDC Booking Hub 🏀🏐
-  **FitSpace: FDC Booking Hub** is a console-based Java application for students and employees of Batstate-U Alangilan Campus, allowing them to efficiently reserve gym facilities at the Fitness Development Center (FDC). Users can view available facilities, select a date, and book a time slot. The system also tracks facility usage, making it easier to monitor their condition and contact users in case of damage. Admins can manage users, reservations, and facilities, improving the organization and accessibility of the FDC’s recreational spaces.
+Welcome to the **FitSpace: FDC Booking Hub Repository**! This repository contains the complete code and resources for this Java console application. The project is designed for students and employees of Batangas State University - Alangilan Campus, allowing them to efficiently reserve gym facilities at the Fitness Development Center.
+
+Explore this repository to learn more about how the system works and how I applied object-oriented programming concepts to create a functional and efficient booking system! 💻🏋
+
+# 🏸 Summary of Sections
+💻 [**1. Project Overview**](#proj_overview)  
+💻 [**2. Application of OOP**](#proj_oop)  
+💻 [**3. Alignment with SDG**](#proj_sdg)  
+💻 [**4. Usage Guidelines**](#proj_guidelines)  
+💻 [**5. Project Development**](#proj_dev)  
+💻 [**6. Acknowledgement**](#proj_acknowledge)  
+💻 [**7. Project Developer**](#proj_developer)  
 <br>
 
-## 🏋️‍♂️ Summary of Sections
--  [1.  Application of OOP](#proj_oop)
--  [2.  Alignment with SDG](#proj_sdg)
--  [3. Usage Guidelines](#proj_guidelines)
--  [4. Technical Solution Framework](#proj_techframework)
--  [5. Project Developer](#proj_developer)
--  [6. Acknowledgement](#proj_acknowledge)
+# <a id = "proj_overview"> 🏸 Project Overview </a> 
+ **FitSpace: FDC Booking Hub** is a Java console program designed for students and employees of **Batstate-U Alangilan Campus**. It streamlines facility reservations at the **Fitness Development Center**, allowing users to view available facilities, book slots, and track usage. The system ensures organized management of reservations, monitors facility conditions, and enables quick communication for maintenance. Admins can manage users, reservations, and facilities, improving access and fostering a more active campus community.
+
+---
+### 🌟 Project Objectives 🌟  
+&nbsp;&nbsp;&nbsp;&nbsp;🎯 **Convenience:** Simplify the reservation process for gym facilities, saving time and effort.  
+&nbsp;&nbsp;&nbsp;&nbsp;🎯 **Organization:** Keep a structured record of facility usage and reservations.  
+&nbsp;&nbsp;&nbsp;&nbsp;🎯 **Monitoring:** Assist in tracking the condition and availability of gym facilities.  
+&nbsp;&nbsp;&nbsp;&nbsp;🎯 **Communication:** Enable efficient user notification in case of issues or maintenance needs.  
+&nbsp;&nbsp;&nbsp;&nbsp;🎯 **Admin Support:** Provide tools for admins to manage users, facilities, and reservations effectively.
 <br>
 
+---
 
 
-## <a id = "proj_oop"> 🏋️‍♂️ Application of OOP </a> 
-**FitSpace** implements core **Object-Oriented Programming (OOP) principles** to ensure efficient user management and system functionality through the following OOP principles:
+# <a id = "proj_oop"> 🏸 Application of OOP </a> 
+**FitSpace: FDC Booking Hub** is built around the fundamental principles of **Object-Oriented Programming (OOP)**, ensuring both efficient functionality and smooth user experience. By applying these principles, the system achieves a scalable and organized structure that facilitates easy management and smooth operation of the booking process. 
+
+## ☕ **Encapsulation** ☕
+
+| **Concept**            | **Description**                                                                                       |
+|------------------------|-------------------------------------------------------------------------------------------------------|
+| **Private Fields**      | The `User` class uses private fields like `firstName`, `password`, and `uniqueId`. Similarly, the `Facility` class uses `facilityID`, `name`, and `status`. The `Admin` class keeps fields like `adminID` and `adminPass` private to protect sensitive information. |
+| **Public Methods**      | Methods like `registerUser()`, `loginUser()`, and getters control access to private fields, ensuring data integrity and security by preventing direct modification of the object's internal state. In `Admin.java`, methods like `getAdminID()` allow controlled access to private fields. |
 
 ---
-## ☕ **Encapsulation**  
-   - **Private Fields**: The User class uses private fields such as `firstName`, `password`, and `uniqueId`, while the `Facility` class uses private fields like `facilityID`, `name`, and `status`. Similarly, in the `Admin` class, the fields `adminID` and `adminPass` are kept private. This ensures that sensitive information is not directly accessible from outside the class, protecting the integrity of the data.
-   - **Public Methods**:  Methods like `registerUser()`, `loginUser()`, and getters control access to these fields, ensuring data integrity and security by preventing direct modification of the object's internal state. In `Admin.java`, methods like `getAdminID()` and `getAdminPass()` allow controlled access to the `adminID` and `adminPass` fields.
+
+## ☕ **Inheritance** ☕
+
+| **Concept**             | **Description**                                                                                       |
+|-------------------------|-------------------------------------------------------------------------------------------------------|
+| **Base Class**          | The `Student` and `Employee` classes extend the `User` base class, inheriting common properties (`userId`, `uniqueId`, `password`) and methods (`registerUser()`, `loginUser()`, `displayCommonHeader()`). |
+| **Customization**       | Subclasses like `Student` and `Employee` customize behavior while reusing common functionality from the `User` class. |
+
 ---
-## ☕ **Inheritance**  
-   - **Base Class**: The `Student` and `Employee` classes extend the `User` base class, inheriting common properties (`userId`, `uniqueId`, `password`) and methods (`registerUser()`, `loginUser()`, `displayCommonHeader()`).  
-   - **Customization**: These subclasses allow customization of behavior while reusing common functionality from the `User` class.
+
+## ☕ **Polymorphism** ☕
+
+| **Concept**             | **Description**                                                                                       |
+|-------------------------|-------------------------------------------------------------------------------------------------------|
+| **Overridden Methods**  | The `Student` and `Employee` classes override methods such as `registerUser()` and `loginUser()` to implement specific behaviors for each user type. |
+| **Dynamic Method Selection** | The `getUserType()` method dynamically selects the appropriate method based on the object type. |
+
 ---
-## ☕ **Polymorphism**  
-   - **Overridden Methods**: The `Student` and `Employee` classes override methods like `registerUser()` and `loginUser()` to implement specific behaviors for each user type.  
-   - **Dynamic Method Selection**: The `getUserType()` method returns the correct object based on user input, and Java dynamically selects the appropriate method based on the object type.
----
-## ☕ **Abstraction**  
-   - **Abstract Class**: The `User` class is abstract, containing shared methods like `commonRegistration()` and `commonLogin()`. These methods handle functionality such as database interactions and password validation.  
-   - **Abstract Methods**: Methods like `displayUserMenu()`, `registerUser()`, and `loginUser()` are left unimplemented, forcing the subclasses (`Student`, `Employee`) to define their specific implementations. This ensures that each user type can define its own actions while following a common structure.
----
+
+## ☕ **Abstraction** ☕
+
+| **Concept**             | **Description**                                                                                       |
+|-------------------------|-------------------------------------------------------------------------------------------------------|
+| **Abstract Class**      | The `User` class is abstract, containing shared methods like `commonRegistration()` and `commonLogin()` that handle functionality such as database interactions and password validation. |
+| **Abstract Methods**    | Methods like `displayUserMenu()`, `registerUser()`, and `loginUser()` are unimplemented, forcing subclasses (`Student`, `Employee`) to define their specific implementations. This ensures flexibility in user-specific actions while maintaining a common structure. |
 <br>
 
-## <a id = "proj_sdg"> 🏋️‍♂️ Alignment with SDGs </a> 
+---
+
+# <a id = "proj_sdg"> 🏸 Alignment with SDGs </a> 
 
 **FitSpace** contributes to the **United Nations' Sustainable Development Goals (SDGs)** by promoting physical well-being and quality education through the following SDGs:
 
 ### 🌍**SDG 4: Quality Education**  
-> FitSpace helps improve access to quality education by providing a platform for students and employees to reserve gym facilities for both physical activities and academic purposes. The FDC is used not only for fitness training but also for classes and exams, creating a versatile learning environment. By integrating educational and fitness facilities, FitSpace enhances the student experience, supporting both academic success and overall health.
+> FitSpace **enhances access to education** by allowing students and employees to reserve gym facilities for both fitness and academic purposes, such as classes and exams. This integration of educational and fitness spaces improves the student experience, supporting academic success and overall well-being.
 
 ### 🌍**SDG 3: Good Health and Well-being**  
-> FitSpace promotes the health and well-being of students and employees by making it easier to reserve gym facilities for fitness and recreation. Access to well-maintained fitness centers encourages regular exercise, improving physical health, reducing stress, and boosting mental well-being. By offering convenient access to these resources, the platform contributes to the overall health of the university community.
+> FitSpace **promotes the health and well-being** of students and employees by simplifying access to gym facilities, encouraging regular exercise, reducing stress, and boosting mental health, ultimately supporting the overall well-being of the university community.
 <br>
 
 
 ## <a id="proj_guidelines"> 🏋️‍♂️ Usage Guidelines </a>
-
 **FitSpace** offers the following **key features** alongside their detailed **usage guidelines:**
+
+---
 
 ### 🏸 1. **User Registration**  
    **Guideline:** Register as a **Student** or **Employee** by providing your full name, role, and password.  
@@ -68,17 +102,16 @@
    **Steps:**  
    1. Enter your **userID** (SR code for students, employee number for employees).  
    2. Enter your **password**.  
-   3. Upon successful login, you will see list of options corresponding to your role (Student or Employee).
+   3. Upon successful login, you will see a list of options corresponding to your role (Student or Employee).
 
 ### 🏸 3. **Admin Dashboard**  
-   **Guideline:** Access the **Admin Interface** to manage users, reservations, and facilities.  
+   **Guideline:** Access the **Admin Interface** to manage core elements of the system, such as users, reservations, and facilities.  
    **Steps:**  
-   1. Enter **Admin ID** and **password** (provided by the system).  
-   2. Upon successful login, you will see options to manage:  
-      - **Manage Users**  
-      - **Manage Reservations**  
-      - **Manage Facilities**  
-   3. Choose the appropriate option to perform actions.
+   1. Log in using the **Admin ID** and **password** (provided by the system).  
+   2. Upon successful login, the Admin Dashboard provides the following options:  
+      - **Manage Users**: Add, update, or remove user accounts (students and employees).  
+      - **Manage Reservations**: View, approve, or cancel reservations.  
+      - **Manage Facilities**: Add, remove, or modify facilities and their statuses.
 
 ### 🏸 4. **Reservation Management**  
    **Guideline:** **Students** and **Employees** can make, view, and manage their reservations.  
@@ -89,29 +122,27 @@
    4. Confirm your reservation and view your **reservation history**.  
    5. You can cancel an active and confirmed reservation from the **reservation history**.
 
-### 🏸 5. **Admin Control**  
-   **Guideline:** **Admins** have the ability to manage users, reservations, and facilities, and modify their statuses.  
-   **Steps:**  
-   1. Log in to the **Admin Dashboard**.  
-   2. Choose the appropriate section:  
-      - **Manage Users**: Add, update, or remove users.  
-      - **Manage Reservations**: Approve, reject, or cancel reservations.  
-      - **Manage Facilities**: Add, remove, or modify the status of facilities.
-
-### 🏸 6. **Log-out**  
+### 🏸 5. **Log-out**  
    **Guideline:** **Users**, **Employees**, and **Admins** can log out from the system at any time.  
    **Steps:**  
    1. Click on **Log-out** from any screen when you are finished.  
    2. You will be securely logged out of the system.
 
 ---
-
-## 🏸 **Additional Guidelines**:
-- **Security**: Always use a strong password and change it regularly to keep your account secure.
-- **Fair Usage**: Ensure that reservations are made fairly, respecting others' access to facilities.
-- **Availability**: Facilities are subject to availability and will be updated in real-time for users to view.
+## 🌟 **Additional Guidelines** 🌟
+**🔻 Security**: Always use a strong password and change it regularly to keep your account secure.  
+**🔻 Fair Usage**: Ensure that reservations are made fairly, respecting others' access to facilities.  
+**🔻 Availability**: Facilities are subject to availability and will be updated in real-time for users to view.
 
 ---
+<br>
+
+
+# <a id="proj_dev"> 🏸 **Project Development** </a> 
+The development of FitSpace: FDC Booking Hub involved careful planning, implementation, and organization. The project follows a well-structured directory format to ensure efficient management and easy navigation of its components.
+
+---
+## 📁**Directory Organization**📁
 The **FitSpace** project is organized in a structured directory format to ensure efficient management of the application’s components. Below is the directory structure that outlines the organization of files and folders:
 
 ```
@@ -143,26 +174,36 @@ FDC Booking Hub/
 │   │       ├── employee.java
 │   │       └── student.java
 ```
-
-
+## ☕**Classes Overview**☕
+| **Class Name**                | **Description**                                                                                          |
+|-------------------------------|----------------------------------------------------------------------------------------------------------|
+| `main.java`                    | Main entry point of the application, responsible for initializing and running the program.                |
+| `admin.java`                   | Class representing an admin user, containing methods and attributes for admin functionality.              |
+| `adminManager.java`            | Manages admin-related operations, such as admin login, registration, and management of facilities/users.  |
+| `DBConnection.java`            | Handles the connection between the Java application and the database, ensuring smooth data transactions.  |
+| `facility.java`                | Represents a facility in the FDC, with attributes such as facility name, type, and availability.          |
+| `facilityManager.java`         | Manages the facilities, including adding, removing, and updating facility data.                          |
+| `reservation.java`             | Represents a reservation made by users, storing information like the user, facility, and reservation time. |
+| `reservationManager.java`      | Manages all reservation-related operations, including creating, viewing, and canceling reservations.       |
+| `cancellation.java`            | Handles the cancellation of reservations, including updating the database and notifying users.            |
+| `user.java`                    | Abstract class for common user properties and behaviors, shared by both students and employees.           |
+| `userManager.java`             | Manages user-related operations, such as registration, login, and user data management.                   |
+| `employee.java`                | Represents an employee user, extending the `user.java` class and adding specific functionalities.         |
+| `student.java`                 | Represents a student user, extending the `user.java` class and adding student-specific functionalities.   |
 <br>
 
-
-## <a id="proj_techframework"> 🏋️‍♂️ **Technical Solution Framework** </a> 
-
-### **Core Technologies**
-
-- **💻 Java**: The primary programming language used to develop the application, providing the backbone for the system's logic and functionality.
+## 💻**Technical Solution Framework**💻
+- **🔻 Java**: The primary programming language used to develop the application, providing the backbone for the system's logic and functionality.
   
-- **🔧 Visual Studio Code**: The integrated development environment (IDE) chosen for writing, debugging, and testing the application's code.
+- **🔻 Visual Studio Code**: The integrated development environment (IDE) chosen for writing, debugging, and testing the application's code.
 
-- **🗄️ MySQL**: The relational database management system (RDBMS) used to store and manage critical data, including user profiles, reservations, and facility details.
+- **🔻 MySQL**: The relational database management system (RDBMS) used to store and manage critical data, including user profiles, reservations, and facility details.
   
-  - **🖥️ MySQL Workbench**: The powerful tool utilized for managing the MySQL database, running queries, and visualizing the database structure.
+- **🔻 MySQL Workbench**: The powerful tool utilized for managing the MySQL database, running queries, and visualizing the database structure.
+---
 
-<br>
-
-## <a id="proj_developer"> 🏋️‍♂️ **Project Developer** </a>
+## <a id="proj_acknowledge"> 🏸 **Acknowledgement** </a>
+## <a id="proj_developer"> 🏸 **Project Developer** </a>
 
 I am a **second-year BS Computer Science student** from **CS-2101** at Batangas State University. I created this project as part of my course **CS-211: Object-Oriented Programming (OOP)**. Below are my contact details:
 
