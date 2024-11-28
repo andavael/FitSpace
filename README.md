@@ -1,6 +1,3 @@
-<p align="center">
-   <img src="ReadMe/FinalHeader.png" alt="Header style="max-width: 100%; height: auto;">
-</p>
 
 # FitSpace: FDC Booking Hub 🏀🏐
 Welcome to the **FitSpace: FDC Booking Hub Repository**! This repository contains the complete code and resources for this Java console application. The project is designed for students and employees of Batangas State University - Alangilan Campus, allowing them to efficiently reserve gym facilities at the Fitness Development Center.
