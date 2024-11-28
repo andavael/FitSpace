@@ -63,65 +63,57 @@ Explore this repository to learn more about how the system works and how I appli
 <br>
 
 
-## <a id="proj_guidelines"> 🏋️‍♂️ Usage Guidelines </a>
-**FitSpace** offers the following **key features** alongside their detailed **usage guidelines:**
+# <a id="proj_guidelines"> 🏸 Usage Guidelines </a>
+### 🌟 **Prerequisites** 🌟
+
+Before you start using **FitSpace**, make sure you have the following:
+
+1. **Unique ID**:  
+   - **Students**: Your SR code 
+   - **Employees**: Your employee ID 
+   This is required for registration and login.
+   
+2. **Integrated Development Environment (IDE)**:  
+   - **Visual Studio Code** or any other compatible IDE for editing and running the Java code.
+
+3. **Java**:  
+   - Ensure **Java** is installed on your system to run the application.  
+   - Recommended version: **Java 8** or higher.
+
+---
+### 🌟 **User Manual** 🌟
+**FitSpace** is designed with user-friendly features to ensure a seamless experience for all. Below are the key features and how to use them:
+
+<p align="center">
+   <img src="ReadMe/UserManual.png" alt="Developer="max-width: 100%; height: auto;">
+</p>
 
 ---
 
-### 🏸 1. **User Registration**  
-   **Guideline:** Register as a **Student** or **Employee** by providing your full name, role, and password.  
-   **Steps:**  
-   1. Choose your role (**Student** or **Employee**).  
-   2. Provide your full name and role-specific ID (SR code for students, employee ID for employees).  
-   3. Set a secure password.  
-   4. Submit your registration form.
 
-### 🏸 2. **User Login**  
-   **Guideline:** Log in using your stored credentials for **Students** or **Employees**.  
-   **Steps:**  
-   1. Enter your **userID** (SR code for students, employee number for employees).  
-   2. Enter your **password**.  
-   3. Upon successful login, you will see a list of options corresponding to your role (Student or Employee).
+| **Feature**               | **Who Can Access**      | **How to Use**                                                                                                                                                      |
+|---------------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1️⃣ User Registration**  | Students, Employees     | - Select your role (**Student** or **Employee**).<br> - Enter your **full name**, **role-specific ID** (SR code for students, Employee ID for employees), and a **secure password**.<br> - Submit your details to complete the registration. |
+| **2️⃣ User Login**         | All users| - Enter your **Usnique ID** (SR code, Employee ID, or Admin ID).<br> - Provide your **password**.<br> - Access features based on your role.|
+| **3️⃣ Reservation Management** | Students, Employees     | - Navigate to the **Reservation Section** after logging in.<br> - Select a facility and pick an available time slot.<br> - Confirm your reservation or view your **reservation history** to cancel or update. |
+| **4️⃣ Admin Dashboard**    | Admins                  | - Log in with the provided Admin credentials.<br> - Use the dashboard to:<br>    - **Manage Users:** Add, update, or delete accounts.<br>    - **Manage Reservations:** Approve or cancel requests.<br>    - **Manage Facilities:** Update facility details or availability. |
+| **5️⃣ Log-out**            | All users               | - Click **Log-out** from any screen to securely exit your account.                                                                                                   |
 
-### 🏸 3. **Admin Dashboard**  
-   **Guideline:** Access the **Admin Interface** to manage core elements of the system, such as users, reservations, and facilities.  
-   **Steps:**  
-   1. Log in using the **Admin ID** and **password** (provided by the system).  
-   2. Upon successful login, the Admin Dashboard provides the following options:  
-      - **Manage Users**: Add, update, or remove user accounts (students and employees).  
-      - **Manage Reservations**: View, approve, or cancel reservations.  
-      - **Manage Facilities**: Add, remove, or modify facilities and their statuses.
-
-### 🏸 4. **Reservation Management**  
-   **Guideline:** **Students** and **Employees** can make, view, and manage their reservations.  
-   **Steps:**  
-   1. Log in to your account.  
-   2. Navigate to the **Reservation** section.  
-   3. Select a facility and choose an available time slot.  
-   4. Confirm your reservation and view your **reservation history**.  
-   5. You can cancel an active and confirmed reservation from the **reservation history**.
-
-### 🏸 5. **Log-out**  
-   **Guideline:** **Users**, **Employees**, and **Admins** can log out from the system at any time.  
-   **Steps:**  
-   1. Click on **Log-out** from any screen when you are finished.  
-   2. You will be securely logged out of the system.
 
 ---
-## 🌟 **Additional Guidelines** 🌟
+### 🌟 **Additional Guidelines** 🌟
 **🔻 Security**: Always use a strong password and change it regularly to keep your account secure.  
 **🔻 Fair Usage**: Ensure that reservations are made fairly, respecting others' access to facilities.  
 **🔻 Availability**: Facilities are subject to availability and will be updated in real-time for users to view.
 
 ---
-<br>
 
 
 # <a id="proj_dev"> 🏸 **Project Development** </a> 
 The development of FitSpace: FDC Booking Hub involved careful planning, implementation, and organization. The project follows a well-structured directory format to ensure efficient management and easy navigation of its components.
 
 ---
-## 📁**Directory Organization**📁
+### 📁**Directory Organization**📁
 **Here’s an overview of how the project files are organized:**  
 ```
 FDC Booking Hub/
@@ -152,7 +144,7 @@ FDC Booking Hub/
 │   │       ├── employee.java
 │   │       └── student.java
 ```
-## ☕**Classes Overview**☕
+### ☕**Classes Overview**☕
 **The application consists of well-defined classes, each responsible for specific functionalities:**
 | **Class Name**                | **Description**                                                                                          |
 |-------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -170,7 +162,9 @@ FDC Booking Hub/
 | `employee.java`                | Represents an employee user, extending the `user.java` class and adding specific functionalities.         |
 | `student.java`                 | Represents a student user, extending the `user.java` class and adding student-specific functionalities.   |
 
-## 💻**Technical Solution Framework**💻
+---
+
+### 💻**Technical Solution Framework**💻
 **To build this project, the following tools and technologies were used:**
 - **🔻 Java**: The primary programming language used to develop the application, providing the backbone for the system's logic and functionality.
   
@@ -181,15 +175,16 @@ FDC Booking Hub/
 - **🔻 MySQL Workbench**: The powerful tool utilized for managing the MySQL database, running queries, and visualizing the database structure.
 ---
 
-## <a id="proj_acknowledge"> 🏸 **Acknowledgement** </a>
+# <a id="proj_acknowledge"> 🏸 **Acknowledgement** </a>
 I sincerely thank **Ms. Fatima Marie P. Agdon**, my instructor for **CS 211: Object-Oriented Programming (OOP)**, for her unwavering guidance and support throughout this project. Her commitment to teaching and encouragement greatly contributed to my understanding of object-oriented programming and its practical applications.  
 
 The development of **FitSpace: FDC Booking Hub** was made possible through her mentorship, which inspired me to think creatively, design efficiently, and code purposefully.  
 
 Thank you for being a remarkable mentor and a source of motivation! 💝💻
-<br>
 
-## <a id="proj_developer"> 🏸 **Project Developer** </a>
+---
+
+# <a id="proj_developer"> 🏸 **Project Developer** </a>
 <p align="center">
    <img src="ReadMe/Developer.png" alt="Developer="max-width: 100%; height: auto;">
 </p>
