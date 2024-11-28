@@ -31,7 +31,6 @@ Explore this repository to learn more about how the system works and how I appli
 
 ---
 
-
 # <a id = "proj_oop"> 🏸 Application of OOP </a> 
 **FitSpace: FDC Booking Hub** is built around the fundamental principles of **Object-Oriented Programming (OOP)**, ensuring both efficient functionality and smooth user experience. By applying these principles, the system achieves a scalable and organized structure that facilitates easy management and smooth operation of the booking process. 
 
@@ -143,8 +142,7 @@ The development of FitSpace: FDC Booking Hub involved careful planning, implemen
 
 ---
 ## 📁**Directory Organization**📁
-The **FitSpace** project is organized in a structured directory format to ensure efficient management of the application’s components. Below is the directory structure that outlines the organization of files and folders:
-
+**Here’s an overview of how the project files are organized:**  
 ```
 FDC Booking Hub/
 ├── .vscode/
@@ -175,6 +173,7 @@ FDC Booking Hub/
 │   │       └── student.java
 ```
 ## ☕**Classes Overview**☕
+**The application consists of well-defined classes, each responsible for specific functionalities:**
 | **Class Name**                | **Description**                                                                                          |
 |-------------------------------|----------------------------------------------------------------------------------------------------------|
 | `main.java`                    | Main entry point of the application, responsible for initializing and running the program.                |
@@ -190,9 +189,9 @@ FDC Booking Hub/
 | `userManager.java`             | Manages user-related operations, such as registration, login, and user data management.                   |
 | `employee.java`                | Represents an employee user, extending the `user.java` class and adding specific functionalities.         |
 | `student.java`                 | Represents a student user, extending the `user.java` class and adding student-specific functionalities.   |
-<br>
 
 ## 💻**Technical Solution Framework**💻
+**To build this project, the following tools and technologies were used:**
 - **🔻 Java**: The primary programming language used to develop the application, providing the backbone for the system's logic and functionality.
   
 - **🔻 Visual Studio Code**: The integrated development environment (IDE) chosen for writing, debugging, and testing the application's code.
@@ -203,31 +202,30 @@ FDC Booking Hub/
 ---
 
 ## <a id="proj_acknowledge"> 🏸 **Acknowledgement** </a>
+I sincerely thank **Ms. Fatima Marie P. Agdon**, my instructor for **CS 211: Object-Oriented Programming (OOP)**, for her unwavering guidance and support throughout this project. Her commitment to teaching and encouragement greatly contributed to my understanding of object-oriented programming and its practical applications.  
+
+The development of **FitSpace: FDC Booking Hub** was made possible through her mentorship, which inspired me to think creatively, design efficiently, and code purposefully.  
+
+Thank you for being a remarkable mentor and a source of motivation! 💝💻
+<br>
+
 ## <a id="proj_developer"> 🏸 **Project Developer** </a>
+<p align="center">
+   <img src="ReadMe/Developer.png" alt="Developer="max-width: 100%; height: auto;">
+</p>
 
-I am a **second-year BS Computer Science student** from **CS-2101** at Batangas State University. I created this project as part of my course **CS-211: Object-Oriented Programming (OOP)**. Below are my contact details:
+I am a **second-year BS Computer Science student** from **CS-2101** at Batangas State University. This project, **FitSpace: FDC Booking Hub**, was created as part of my course **CS-211: Object-Oriented Programming (OOP)**.
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Name</th>
-      <th>GitHub</th>
-      <th>E-mail</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="ReadMe/Anda.jpg" alt="Anthonina Dhapniella C. Vael" width="50" height="50" style="border-radius:50%;"></td>
-      <td><a href="https://github.com/andavael" target="_blank">Anthonina Dhapniella C. Vael</a></td>
-      <td><a href="https://github.com/andavael" target="_blank">andavael</a></td>
-      <td><a href="mailto:23-04485@g.batstate-u.edu.ph">23-04485@g.batstate-u.edu.ph</a></td>
-    </tr>
-  </tbody>
-</table>
+As a **student-athlete**, I deeply value the balance between academics and athletics. The challenges I’ve faced in managing time and access to facilities inspired me to develop **FitSpace**, a platform designed to make gym facility reservations seamless and efficient. My goal was to create a system that fosters both physical well-being and academic success by ensuring students and employees can easily access and utilize fitness spaces.
 
 ---
 
-Thank you for exploring my **FitSpace** project! Feel free to check out the code on my GitHub or reach out to me for any queries.
+### 🌟 **Contact Details** 🌟
 
-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;📜 **Name:** [Anthonina Dhapniella C. Vael](https://github.com/andavael)  
+&nbsp;&nbsp;&nbsp;&nbsp;💻 **GitHub:** [github.com/andavael](https://github.com/andavael)  
+&nbsp;&nbsp;&nbsp;&nbsp;📧 **Email:** [23-04485@g.batstate-u.edu.ph](mailto:23-04485@g.batstate-u.edu.ph)  
+
+---
+
+Thank you for exploring **FitSpace**! This project reflects my passion for both **technology** and **sports**, and I hope it serves as a valuable tool for users. Feel free to reach out to me for any queries or collaboration opportunities. 🏐💻
