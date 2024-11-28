@@ -34,43 +34,23 @@ Explore this repository to learn more about how the system works and how I appli
 # <a id = "proj_oop"> 🏸 Application of OOP </a> 
 **FitSpace: FDC Booking Hub** is built around the fundamental principles of **Object-Oriented Programming (OOP)**, ensuring both efficient functionality and smooth user experience. By applying these principles, the system achieves a scalable and organized structure that facilitates easy management and smooth operation of the booking process. 
 
-## ☕ **Encapsulation** ☕
-
-| **Concept**            | **Description**                                                                                       |
-|------------------------|-------------------------------------------------------------------------------------------------------|
-| **Private Fields**      | The `User` class uses private fields like `firstName`, `password`, and `uniqueId`. Similarly, the `Facility` class uses `facilityID`, `name`, and `status`. The `Admin` class keeps fields like `adminID` and `adminPass` private to protect sensitive information. |
-| **Public Methods**      | Methods like `registerUser()`, `loginUser()`, and getters control access to private fields, ensuring data integrity and security by preventing direct modification of the object's internal state. In `Admin.java`, methods like `getAdminID()` allow controlled access to private fields. |
-
 ---
-
-## ☕ **Inheritance** ☕
-
-| **Concept**             | **Description**                                                                                       |
-|-------------------------|-------------------------------------------------------------------------------------------------------|
-| **Base Class**          | The `Student` and `Employee` classes extend the `User` base class, inheriting common properties (`userId`, `uniqueId`, `password`) and methods (`registerUser()`, `loginUser()`, `displayCommonHeader()`). |
-| **Customization**       | Subclasses like `Student` and `Employee` customize behavior while reusing common functionality from the `User` class. |
-
+## ☕ **Encapsulation**  
+   - **Private Fields**: The User class uses private fields such as firstName, password, and uniqueId, while the Facility class uses private fields like facilityID, name, and status. Similarly, in the Admin class, the fields adminID and adminPass are kept private. This ensures that sensitive information is not directly accessible from outside the class, protecting the integrity of the data.
+   - **Public Methods**:  Methods like registerUser(), loginUser(), and getters control access to these fields, ensuring data integrity and security by preventing direct modification of the object's internal state. In Admin.java, methods like getAdminID() and getAdminPass() allow controlled access to the adminID and adminPass fields.
 ---
-
-## ☕ **Polymorphism** ☕
-
-| **Concept**             | **Description**                                                                                       |
-|-------------------------|-------------------------------------------------------------------------------------------------------|
-| **Overridden Methods**  | The `Student` and `Employee` classes override methods such as `registerUser()` and `loginUser()` to implement specific behaviors for each user type. |
-| **Dynamic Method Selection** | The `getUserType()` method dynamically selects the appropriate method based on the object type. |
-
+## ☕ **Inheritance**  
+   - **Base Class**: The Student and Employee classes extend the User base class, inheriting common properties (userId, uniqueId, password) and methods (registerUser(), loginUser(), displayCommonHeader()).  
+   - **Customization**: These subclasses allow customization of behavior while reusing common functionality from the User class.
 ---
-
-## ☕ **Abstraction** ☕
-
-| **Concept**             | **Description**                                                                                       |
-|-------------------------|-------------------------------------------------------------------------------------------------------|
-| **Abstract Class**      | The `User` class is abstract, containing shared methods like `commonRegistration()` and `commonLogin()` that handle functionality such as database interactions and password validation. |
-| **Abstract Methods**    | Methods like `displayUserMenu()`, `registerUser()`, and `loginUser()` are unimplemented, forcing subclasses (`Student`, `Employee`) to define their specific implementations. This ensures flexibility in user-specific actions while maintaining a common structure. |
-<br>
-
+## ☕ **Polymorphism**  
+   - **Overridden Methods**: The Student and Employee classes override methods like registerUser() and loginUser() to implement specific behaviors for each user type.  
+   - **Dynamic Method Selection**: The getUserType() method returns the correct object based on user input, and Java dynamically selects the appropriate method based on the object type.
 ---
-
+## ☕ **Abstraction**  
+   - **Abstract Class**: The User class is abstract, containing shared methods like commonRegistration() and commonLogin(). These methods handle functionality such as database interactions and password validation.  
+   - **Abstract Methods**: Methods like displayUserMenu(), registerUser(), and loginUser() are left unimplemented, forcing the subclasses (Student, Employee) to define their specific implementations. This ensures that each user type can define its own actions while following a common structure.
+---
 # <a id = "proj_sdg"> 🏸 Alignment with SDGs </a> 
 
 **FitSpace** contributes to the **United Nations' Sustainable Development Goals (SDGs)** by promoting physical well-being and quality education through the following SDGs:
