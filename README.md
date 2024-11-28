@@ -60,7 +60,6 @@ Explore this repository to learn more about how the system works and how I appli
 
 ### 🌍**SDG 3: Good Health and Well-being**  
 > FitSpace **promotes the health and well-being** of students and employees by simplifying access to gym facilities, encouraging regular exercise, reducing stress, and boosting mental health, ultimately supporting the overall well-being of the university community.
-<br>
 
 ---
 
