@@ -71,7 +71,6 @@ Before you start using **FitSpace**, make sure you have the following:
 1. **Unique ID**:  
    - **Students**: Your SR code 
    - **Employees**: Your employee ID 
-   This is required for registration and login.
    
 2. **Integrated Development Environment (IDE)**:  
    - **Visual Studio Code** or any other compatible IDE for editing and running the Java code.
