@@ -64,20 +64,23 @@ Explore this repository to learn more about how the system works and how I appli
 ---
 
 # <a id="proj_guidelines"> 🏸 Usage Guidelines </a>
-### 🌟 **Prerequisites** 🌟
+### 🌟 Prerequisites 🌟  
+Before you start using FitSpace, make sure you have the following:  
 
-Before you start using **FitSpace**, make sure you have the following:
+1. **Unique ID:**  
+   - **Students:** Your SR code  
+   - **Employees:** Your employee ID  
 
-1. **Unique ID**:  
-   - **Students**: Your SR code 
-   - **Employees**: Your employee ID 
-   
-2. **Integrated Development Environment (IDE)**:  
-   - **Visual Studio Code** or any other compatible IDE for editing and running the Java code.
+2. **Integrated Development Environment (IDE):**  
+   - Visual Studio Code or any other compatible IDE for editing and running the Java code.  
 
-3. **Java**:  
-   - Ensure **Java** is installed on your system to run the application.  
-   - Recommended version: **Java 8** or higher.
+3. **Java:**  
+   - Ensure Java is installed on your system to run the application.  
+   - **Recommended version:** Java 8 or higher.  
+
+4. **Database Management System (DBMS):**  
+   - **MySQL** is required to store and manage user data, reservations, and facility information.  
+   - Ensure MySQL is installed and properly configured on your system.  
 
 ---
 ### 🌟 **User Manual** 🌟
